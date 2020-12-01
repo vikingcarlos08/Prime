@@ -1,0 +1,43 @@
+<div class="main">
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-image">
+                    <figure><img src="./assets/images/signup-image.jpg" alt="sing up image"></figure>
+                    <a routerLink="/login" class="signup-image-link">logout</a>
+                </div>
+                <div class="signup-form">
+                    <h2 class="form-title">Welcome {{ homeForm.firstName }}</h2>
+                    <div class="">
+                        <div class="register-form" id="register-form">
+                            <div class="form-group">
+                                <label for="first"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" [disabled]="true" [(ngModel)]="homeForm.firstName" placeholder="Your First Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="last"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" [disabled]="true" [(ngModel)]="homeForm.lastName" placeholder="Your Last Name"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="last"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" [disabled]="true" [(ngModel)]="homeForm.username" placeholder="Your Username"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" [disabled]="true" [(ngModel)]="homeForm.password" placeholder="Password"/>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="checkbox" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div> -->
+                            <!-- <div class="form-group form-button">
+                                <button type="button" class="btn btn-primary" [disabled]="buttonFlag == true">Register</button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</div>  
